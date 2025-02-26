@@ -9,6 +9,7 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs"
 import { ArrowDownRightIcon, CircleDollarSignIcon, TrendingUpIcon, Users2Icon } from "lucide-react"
+import { DashboardCard } from "@/components/dashboard/page-card"
 
 export function TabsLinks() {
   return (
@@ -22,32 +23,32 @@ export function TabsLinks() {
       </TabsList>
       
       <TabsContent value="dashboard">
-        <Card>
-          <CardContent className="space-y-2">
-            <div>Page Dashboard</div>
+        <Card className="bg-slate-800 border-slate-800">
+          <CardContent className="bg-slate-800">
+            <DashboardCard />
           </CardContent>
         </Card>
       </TabsContent>
 
       <TabsContent value="cliente">
-        <Card>
-          <CardContent className="space-y-2">
+        <Card className="bg-slate-800 border-slate-800">
+          <CardContent className="bg-slate-800">
             <div>Page Cliente</div>
           </CardContent>
         </Card>
       </TabsContent>
 
       <TabsContent value="entradas">
-        <Card>
-          <CardContent className="space-y-2">
+        <Card className="bg-slate-800 border-slate-800">
+          <CardContent className="bg-slate-800">
             <div>Page Entradas</div>
           </CardContent>
         </Card>
       </TabsContent>
 
       <TabsContent value="saidas">
-        <Card>
-          <CardContent className="space-y-2">
+        <Card className="bg-slate-800 border-slate-800">
+          <CardContent className="bg-slate-800">
             <div>Page Saídas</div>
           </CardContent>
         </Card>
