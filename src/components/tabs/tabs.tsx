@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/tabs"
 import { ArrowDownRightIcon, CircleDollarSignIcon, TrendingUpIcon, Users2Icon } from "lucide-react"
 import { DashboardCard } from "@/components/dashboard/page-card"
+import ListClient from "../dashboard/page-client"
+import CadastroCliente from "@/app/(pagestabs)/cliente"
 
 export function TabsLinks() {
   return (
@@ -26,14 +28,15 @@ export function TabsLinks() {
         <Card className="bg-slate-800 border-slate-800">
           <CardContent className="bg-slate-800">
             <DashboardCard />
+            <ListClient />
           </CardContent>
         </Card>
       </TabsContent>
 
       <TabsContent value="cliente">
         <Card className="bg-slate-800 border-slate-800">
-          <CardContent className="bg-slate-800">
-            <div>Page Cliente</div>
+          <CardContent className="bg-slate-800 text-white">
+            <CadastroCliente />
           </CardContent>
         </Card>
       </TabsContent>

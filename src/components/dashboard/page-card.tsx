@@ -1,5 +1,5 @@
 import CardKpi from "./card-kpi";
-import { User2Icon } from "lucide-react";
+import { DollarSignIcon, ShoppingBagIcon, User2Icon, Wallet2Icon } from "lucide-react";
 
 export function DashboardCard() {
     return (
@@ -13,26 +13,26 @@ export function DashboardCard() {
             />
 
             <CardKpi 
-                title="Clientes"
-                icon={<User2Icon />}
-                value="13"
-                observation="+10% from last month"
+                title="Vendas"
+                icon={<ShoppingBagIcon />}
+                value="8000"
+                observation="+16% from last month"
                 backgroundColor="bg-blue-800"
             />
 
             <CardKpi 
-                title="Clientes"
-                icon={<User2Icon />}
-                value="13"
-                observation="+10% from last month"
+                title="Recebidas"
+                icon={<DollarSignIcon />}
+                value="5000"
+                observation="+12% from last month"
                 backgroundColor="bg-green-800"
             />
 
             <CardKpi 
-                title="Clientes"
-                icon={<User2Icon />}
-                value="13"
-                observation="+10% from last month"
+                title="Total"
+                icon={<Wallet2Icon />}
+                value="-3000"
+                observation="+8% from last month"
                 backgroundColor="bg-red-800"
             />
         </div>

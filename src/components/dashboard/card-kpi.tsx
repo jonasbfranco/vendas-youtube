@@ -19,7 +19,7 @@ export default function CardKpi(props: CardProps){
                     </div>
                 </CardTitle>
             </CardHeader>
-            <CardContent className="">
+            <CardContent className="-mt-5 -mb-3">
                 <div className="flex flex-col justify-start items-start">
                     <div>
                         <p className="text-6xl font-black text-slate-300">{props.value}</p>
