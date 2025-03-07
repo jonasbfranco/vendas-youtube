@@ -9,7 +9,7 @@ import {
     TableRow,
 } from "@/components/ui/table";
 
-const entradas = [
+const saidas = [
     {
         id: "1",
         cliente: "Jonas Baptista Franco",
@@ -54,10 +54,10 @@ const entradas = [
     },
 ];
 
-export default function EntradaList() {
+export default function SaidaList() {
     return (
         <Table>
-            <TableCaption>Lista das últimas entradas.</TableCaption>
+            <TableCaption>Lista das últimas saidas.</TableCaption>
             <TableHeader>
                 <TableRow>
                     <TableHead className="w-[140px]">Data</TableHead>
@@ -68,11 +68,11 @@ export default function EntradaList() {
             </TableHeader>
             <TableBody>
 
-                {entradas.map((entrada) => (
-                    <TableRow key={entrada.id}>
-                        <TableCell className="font-medium">{entrada.data}</TableCell>
-                        <TableCell>{entrada.cliente}</TableCell>
-                        <TableCell>{entrada.valor}</TableCell>
+                {saidas.map((saida) => (
+                    <TableRow key={saida.id}>
+                        <TableCell className="font-medium">{saida.data}</TableCell>
+                        <TableCell>{saida.cliente}</TableCell>
+                        <TableCell>{saida.valor}</TableCell>
                         <TableCell>
                             <div className="flex justify-end gap-2">
                                 <button className="px-4 py-2 bg-sky-700 hover:bg-sky-500 rounded-md">Detalhes</button>

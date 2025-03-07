@@ -13,6 +13,7 @@ import { DashboardCard } from "@/components/dashboard/page-card"
 import ListClient from "../dashboard/page-client"
 import CadastroCliente from "@/app/(pagestabs)/cliente"
 import CadastroEntradas from "@/app/(pagestabs)/entradas"
+import CadastroSaidas from "@/app/(pagestabs)/saidas"
 
 export function TabsLinks() {
   return (
@@ -52,8 +53,8 @@ export function TabsLinks() {
 
       <TabsContent value="saidas">
         <Card className="bg-slate-800 border-slate-800">
-          <CardContent className="bg-slate-800">
-            <div>Page Saídas</div>
+          <CardContent className="bg-slate-800 text-white">
+            <CadastroSaidas />
           </CardContent>
         </Card>
       </TabsContent>
